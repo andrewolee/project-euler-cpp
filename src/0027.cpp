@@ -9,7 +9,7 @@ int main() {
     int result = 0;
     int max = 0;
     for (int b : bs) {
-        for (int a = 2 - b; a < 1000; a += 2) {
+        for (int a = 2 - b; a < N; a += 2) {
             int n;
             for (n = 0; n < b; n++) {
                 if (primes.find(n * n + a * n + b) == primes.end())
