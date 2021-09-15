@@ -4,12 +4,24 @@
 #include <vector>
 #include <unordered_set>
 
-int gcd(int a, int b);
+namespace nbt {
+    long long gcd(long long a, long long b);
 
-int pow(int a, int b);
+    long long lcm(long long a, long long b);
 
-int mod_pow(int a, int b, int m);
+    long long pow(long long a, long long b);
 
-std::vector<int> eratosthenes(int n);
+    long long mod_pow(long long a, long long b, long long m);
+
+    long long isqrt(long long n);
+
+    std::vector<long long> eratosthenes(long long n);
+
+    std::vector<long long> p_factor(long long n);
+
+    std::vector<long long> p_factor(long long n, std::vector<long long> primes);
+
+    std::vector<long long> factor(long long n);
+}
 
 #endif

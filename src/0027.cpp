@@ -4,7 +4,7 @@
 const int N = 1000;
 
 int main() {
-    std::vector bs = eratosthenes(N);
+    std::vector bs = nbt::eratosthenes(N);
     std::unordered_set primes = std::unordered_set(bs.begin(), bs.end());
     int result = 0;
     int max = 0;

@@ -5,9 +5,9 @@
 const int N = 2000000;
 
 int main() {
-    std::vector<int> primes = eratosthenes(N);
-    long result = 0;
-    for (int prime : primes)
+    std::vector<long long> primes = nbt::eratosthenes(N);
+    long long result = 0;
+    for (long long prime : primes)
         result += prime;
     std::cout << result << std::endl;
 }
