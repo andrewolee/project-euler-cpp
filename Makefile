@@ -9,7 +9,7 @@ all:
 	@echo No make all rule. Use \'make bin/xxxx\'
 
 $(BIN)/%: $(BIN)/%.o $(BIN)/$(DEP).o
-	$(CPP) $(CPPFLAGS) $? -o $@
+	$(CPP) $(CPPFLAGS) $^ -o $@
 
 $(BIN)/%.o: $(SRC)/%.cpp
 	$(CPP) $(CPPFLAGS) -c $< -o $@
